@@ -1,0 +1,23 @@
+{{ form_start(form, {'attr': {'id': id|default('form')}} ) }}
+
+{{ form_widget(form) }}
+
+
+{{ form_end(form) }}
+
+<script>
+    var id = '{{ id }}';
+    var message = '{{ message }}';
+{#    alert('delete_form');
+    function confirmDelete()
+    {
+        alert('delete_form confirmDelete');
+        bootbox.confirm(message, function (result) {
+            if (result == true)
+            {
+                document.form.submit();
+            }
+        });
+    }#}
+</script>
+
